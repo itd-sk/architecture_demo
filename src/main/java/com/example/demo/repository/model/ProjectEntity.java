@@ -19,10 +19,10 @@ public class ProjectEntity {
     private String description;
 
     @Column(name = "start_date")
-    private LocalDate start;
+    private LocalDate startDate;
 
     @Column(name = "end_date")
-    private LocalDate end;
+    private LocalDate endDate;
 
     public void setId(Long id) {
         this.id = id;
@@ -48,19 +48,19 @@ public class ProjectEntity {
         this.description = description;
     }
 
-    public LocalDate getStart() {
-        return start;
+    public LocalDate getStartDate() {
+        return startDate;
     }
 
-    public void setStart(LocalDate start) {
-        this.start = start;
+    public void setStartDate(LocalDate start) {
+        this.startDate = start;
     }
 
-    public LocalDate getEnd() {
-        return end;
+    public LocalDate getEndDate() {
+        return endDate;
     }
 
-    public void setEnd(LocalDate end) {
-        this.end = end;
+    public void setEndDate(LocalDate end) {
+        this.endDate = end;
     }
 }
