@@ -7,6 +7,7 @@ public record Project(Long id, String name, String description, LocalDate startD
 
     public int getDurationInDays() {
        Period period = Period.between(startDate, endDate);
-       return period.getDays();
+       // Add one day to include the end date
+       return period.getDays()+1;
     }
 }
